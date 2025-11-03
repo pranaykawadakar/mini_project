@@ -65,7 +65,7 @@ form {
   margin-bottom: 20px;
 }
 
-form input, form button {
+form input, form select, form button {
   padding: 10px;
   border: 1px solid var(--border);
   border-radius: 5px;
@@ -95,6 +95,12 @@ form button {
   align-items: center;
 }
 
+.task.completed .task-info h3,
+.task.completed .task-info p {
+  text-decoration: line-through;
+  color: #00b300;
+}
+
 .task-info {
   flex: 1;
 }
@@ -106,12 +112,30 @@ form button {
 
 .task-info p {
   font-size: 14px;
-  color: var(--text);
 }
 
 .task-info small {
   font-size: 12px;
   color: gray;
+}
+
+.priority {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.priority.Low {
+  background-color: #4caf50;
+}
+.priority.Medium {
+  background-color: #ffa500;
+}
+.priority.High {
+  background-color: #e53935;
 }
 
 .task button {
@@ -124,7 +148,6 @@ form button {
   cursor: pointer;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
   .container {
     margin: 20px;
