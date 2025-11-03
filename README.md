@@ -41,4 +41,5 @@ It allows users to add, edit, delete, and mark tasks as completed, with dark/lig
 
 ## 📸 Preview
 
+<img width="1005" height="634" alt="image" src="https://github.com/user-attachments/assets/cbd0ab68-a57a-48f5-9dc8-807936cb47d6" />
 
